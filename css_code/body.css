@@ -116,6 +116,7 @@ body {
 .bottom_contant2_info {
   height: 417px;
   background-image: linear-gradient(#f9df56, #e0c340);
+  /* background-image: linear-gradient(#ffe93f, #ffd92a); */
   display: flex;
   /* justify-content: center; */
   padding-left: 20px;
@@ -138,6 +139,12 @@ body {
   line-height: 37px;
   letter-spacing: 0%;
   margin-bottom: 10px;
+}
+.pay{
+  background-color: white;
+
+  transform: rotate(-2deg);position: relative;
+  display: inline-block;
 }
 .text5,
 .text7 {
