@@ -1,247 +1,373 @@
-<!doctype html>
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+body {
+  background-color: #ebdd97;
+  /* background : linear-gradient(#a619f8,#00f2fe); */
+}
+.mainpage {
+  /* padding-bottom: 1000px; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+}
+.mainpage::before,
+.mainpage::after {
+  content: "";
+  flex: 1; /* each side takes 1 part */
+}
+.brand_card {
+  /* position: relative;
+    background-color: black ;
+   height: 40px; */
 
-    <title>Product Webpage Prototype</title>
-    <link rel="stylesheet" href="css_code/header.css" />
-    <link rel="stylesheet" href="css_code/footer.css" />
-    <link rel="stylesheet" href="css_code/body.css" />
-  </head>
-  <body>
-    <div class="mainpage">
-      <div class="header_card">
-        <div class="header">
-          <div class="left">
-            <img src="images/logo7.png" alt="logo" class="logo" />
-            <div class="text">FASHION</div>
-          </div>
-          <div class="middle"></div>
-          <div class="right">
-            <div class="lablehead"><a href="#" class="word">CATOLOGUE</a></div>
-            <div class="lablehead"><a href="#" class="word">FASHION</a></div>
-            <div class="lablehead"><a href="#" class="word">FAVOURITE</a></div>
-            <div class="lablehead"><a href="#" class="word">LIFE STYLE</a></div>
-            <div class="lablehead">
-              <button class="sign_up">SIGN UP</button>
-            </div>
-          </div>
-        </div>
-        <div class="article_card reveal">
-          <div class="text_section">
-            <div class="text_art">
-              <div class="text1">LET 's</div>
-              <div class="text1">EXPLORE</div>
-              <div class="text2">UNIQUE</div>
-              <div class="text1">CLOTHES</div>
-            </div>
-            <div class="text3">
-              Live for Influential and Innovative fashion!
-            </div>
-            <button class="shop">SHOP NOW</button>
-          </div>
-          <img src="images/img12.png" class="art_img" />
-        </div>
+  width: auto;
+  height: 150px; /* thickness */
+  background-color: #e7d267; /* color */
+  margin-top: 10px;
+  border-radius: 3px;
+  padding-left: 40px;
+  position: relative;
+}
+.brand_place {
+  position: relative;
+  /* padding: 10px 20px 10px; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.brand_logo {
+  gap: 58px;
+  /* height: 90px;
+  width: 90px; */
+  height: 95%;
+  width: 125px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.bottom_card {
+  width: 100%;
+  height: 900px;
+  background-color: white;
+  justify-content: center;
+}
+.bottom_contant {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  height: 460px;
+}
+.slide_grid {
+  align-items: center;
+  min-width: 788px;
+  height: 348px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1 1 1;
+}
+.slide_card {
+  height: 334px;
+  min-width: 230px;
+  width: auto;
+  contain: fit;
+  gap: 50px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.arrival {
+  margin-left: 10px;
+}
 
-        <div class="brand_card reveal">
-          <div class="brand_track">
-            <!-- FIRST SET -->
-            <div class="brand_row">
-              <img src="images/brand1.png" class="brand_logo" />
-              <img src="images/brand2.png" class="brand_logo" />
-              <img src="images/brand3.png" class="brand_logo" />
-              <img src="images/brand4.png" class="brand_logo" />
-              <img src="images/brand5.png" class="brand_logo" />
-              <img src="images/brand6.png" class="brand_logo" />
-            </div>
+.slide_one {
+  height: 385px;
+}
+.slide-info1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #191919;
+  font-size: 19px;
+  letter-spacing: -4%;
+  line-height: 10px;
+  cursor: pointer;
+}
+.slide-info2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #7f7f7f;
+  font-size: 11px;
+  letter-spacing: -4%;
+  line-height: 10px;
+  cursor: pointer;
+}
+.bottom_contant2 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 411px 1fr;
+}
+.bottom_img1 {
+  object-fit: cover;
+}
+.bottom_contant2_info {
+  height: 417px;
+  background-image: linear-gradient(#f9df56, #e0c340);
+  display: flex;
+  /* justify-content: center; */
+  padding-left: 20px;
 
-            <!-- DUPLICATE SET -->
-            <div class="brand_row">
-              <img src="images/brand1.png" class="brand_logo" />
-              <img src="images/brand2.png" class="brand_logo" />
-              <img src="images/brand3.png" class="brand_logo" />
-              <img src="images/brand4.png" class="brand_logo" />
-              <img src="images/brand5.png" class="brand_logo" />
-              <img src="images/brand6.png" class="brand_logo" />
-            </div>
-          </div>
-        </div>
-        <div class="bottom_card reveal">
-          <div class="bottom_contant">
-            <div class="arrival">
-              <h1>NEW ARR<span class="arr">IVALS</span></h1>
-            </div>
-            <div class="slide_grid">
-              <div class="slide_one">
-                <img src="images/slide1.png" class="slide_card" />
-                <p class="slide-info1">Hoodies & Sweatshirt</p>
-                <p class="slide-info2">Explore Now!</p>
-              </div>
-              <div class="slide_one">
-                <img src="images/slide2.png" class="slide_card" />
-                <p class="slide-info1">Coats & Parkas</p>
-                <p class="slide-info2">Explore Now!</p>
-              </div>
-              <div class="slide_one">
-                <img src="images/slide3.png" class="slide_card" />
-                <p class="slide-info1">Tees & T-Shirt</p>
-                <p class="slide-info2">Explore Now!</p>
-              </div>
-            </div>
-          </div>
-          <div class="bottom_contant2 reveal">
-            <div>
-              <img
-                src="images/116cf92ffce852e6dcfea7d382714f1c60578ad2(111).png"
-                class="bottom_img1"
-              />
-            </div>
-            <div class="bottom_contant2_info">
-              <div class="container1">
-                <div class="pay">PAYDAY</div>
-                <div class="text4">SALE NOW</div>
-                <p class="text5">
-                  Spend minimal $100 get 30% off<br />voucher code for your next
-                  purchase
-                </p>
-                <p class="text6">1 June - 10 June 2021</p>
-                <p class="text7">*Terms & Conditions apply</p>
-                <button class="shop1">SHOP NOW</button>
-                <!-- <span>PAYDAY</span> -->
-              </div>
-            </div>
-          </div>
-          <div class="bottom_contant3 reveal">
-            <div class="bottom_container3">
-              <div class="head1">Young’s Favourite</div>
-              <div class="slide_grid2">
-                <div class="slide_two">
-                  <img src="images/slide4.png" class="slide_pic" />
-                  <p class="slide-info1">Trending on instagramt</p>
-                  <p class="slide-info2">Buy Now!</p>
-                </div>
-                <div class="slide_two">
-                  <img src="images/slide5.png" class="slide_pic" />
-                  <p class="slide-info1">All Under $40</p>
-                  <p class="slide-info2">Buy Now!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="bottom_contant4 reveal">
-            <div class="class1">
-              <div class="text8">
-                <div class="text9">
-                  <div class="text10">
-                    <h1 class="text11">
-                      DOWNLOAD APP &<br />
-                      GET THE VOUCHER!
-                    </h1>
-                    <p class="text12">
-                      Get 30% off for first transaction using Rondovision mobile
-                      app for now.
-                    </p>
-                  </div>
-                </div>
-                <div class="text9">
-                  <div class="cont">
-                    <div class="play">
-                      <img src="images/apple.png" class="apps" />
-                    </div>
-                    <div class="play">
-                      <img src="images/play.png" class="apps" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="class1">
-              <div class="mobile">
-                <img src="images/mobile1.png" class="phone" />
-              </div>
-            </div>
-          </div>
-          <div class="bottom_contant5 reveal">
-            <h1 class="join">
-              JOIN SHOPPING COMMUNITY TO<br />
-              GET MONTHLY PROMO
-            </h1>
-            <p class="sent">
-              Type your email down below and be young wild generation
-            </p>
-            <form>
-              <div class="email">
-                <input
-                  type="email"
-                  placeholder="Add your email here"
-                  class="box"
-                />
-                <button type="submit" class="send">SEND</button>
-              </div>
-            </form>
-          </div>
-          <div class="foot reveal">
-            <div class="foot_mid">
-              <div class="separator">
-                <div class="separator1">
-                  <h1 class="foot_head">FASHION</h1>
-                  <p class="foot_info2">
-                    Complete your style with awesome clothes from us.
-                  </p>
-                  <img src="images/facebook.png" class="icon" />
-                  <img src="images/instagram.png" class="icon" />
-                  <img src="images/twitter.png" class="icon" />
-                  <img src="images/linkedin.png" class="icon" />
-                </div>
-              </div>
-              <div class="separator">
-                <div class="separator2">
-                  <p class="foot_info1">Company</p>
-                  <p class="foot_info2">About</p>
-                  <p class="foot_info2">Contact us</p>
-                  <p class="foot_info2">Support</p>
-                  <p class="foot_info2">Careers</p>
-                </div>
-                <div class="separator2">
-                  <p class="foot_info1">Quick Link</p>
-                  <p class="foot_info2">Share Location</p>
-                  <p class="foot_info2">Orders Tracking</p>
-                  <p class="foot_info2">Size Guide</p>
-                  <p class="foot_info2">FAQs</p>
-                </div>
-                <div class="separator2">
-                  <p class="foot_info1">Legal</p>
-                  <p class="foot_info2">Terms & conditions</p>
-                  <p class="foot_info2">Privacy Policy</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script>
-      function revealOnScroll() {
-        const reveals = document.querySelectorAll(".reveal");
+  /* align-items: center; */
+}
+.container1 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 280px;
+  margin-left: 40px;
+}
+.text4,
+.pay {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 35px;
+  line-height: 37px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+.text5,
+.text7 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
 
-        reveals.forEach((el) => {
-          const windowHeight = window.innerHeight;
-          const elementTop = el.getBoundingClientRect().top;
+  line-height: 15px;
+}
+.text6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 2%;
+  line-height: 15px;
+}
+.shop1 {
+  background-color: black;
+  color: white;
+  border-style: solid;
+  padding: 10px 20px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+/* .bottom_contant3 {
+  display: flex;
+} */
+.bottom_container3 {
+    position: relative;
+    width: auto;
+    height: 400px;
+  padding: 10px 50px 10px;
+}
+.head1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: 4%;
+  margin-bottom: 20px;
+}
+.slide_grid2 {
+    position: relative;
+  height: 320px;
+  min-width: 300px;
+  
+  /* justify-content: center; */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1 1;
+}
+.slide_pic{
+    height :280px ;
+    width: 360px;
+    border-radius: 10px;
+}
+/* .bottom_container4 {
+    position: relative;
+    width: auto;
+    height: 400px;
+  /* padding: 10px 50px 10px; */
+  /* display: flex; */
+/* } */ 
+.bottom_contant4{
+    
+    display: flex ;
+    flex-direction: row;
+    flex : 1;
+    justify-content: space-between ;
+    height: 530px;
+    width: auto;
+    margin: 20px 80px 20px ;
+    
+    
+  }
+  .class1{
+  
+   margin:10px 20px 10px ;
+   flex: 1 ;
+   
+   display: flex;
+   
 
-          const revealPoint = 100;
+  }
+  .text8{
+    margin:10px 20px 10px ;
+    flex: 1 ;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ flex-direction: column;
 
-          if (elementTop < windowHeight - revealPoint) {
-            el.classList.add("active");
-          }
-        });
-      }
+}
+.text9{
+  margin:10px 20px 10px ;
+  /* flex: 1 ; */
+  
+  display: flex;
+  flex-direction: column;
+  
+ 
+  
+}
 
-      window.addEventListener("scroll", revealOnScroll);
-    </script>
-  </body>
-</html>
+.text11{
+  
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 4%;
+  line-height: 16px;
+  
+}
+.text12{
+   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: -4%;
+  line-height: 10px;
+ color: #7c7c7c;
+ justify-content: center;
+  align-items: center;
+}
+.cont{
+  display: flex;
+  flex-direction: row;
+  
+  margin-top: -20px;
+   justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}
+.play{
+ 
+  /* flex: 1 ; */
+  flex-direction: column;
+  /* justify-content: flex-start; */
+}
+.apps{
+  justify-content: space-around;
+  height: 20px;
+  width: 60px;
+   cursor: pointer;
+}
+.mobile{
+  object-fit: contain;
+}
+.phone{
+  object-fit: contain;
+  width: 400px;
+  height: 500px;
+  
+}
+.bottom_contant5{
+  height: 250px;
+  width: auto;
+  background-color: #e5c643;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.join{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: -40px;
+  letter-spacing: 3%;
+  line-height: 24px;
+ text-align: center;
+
+
+}
+.sent{
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+.email{
+  background-color: white;
+  width: 250px;
+  padding-left: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+  
+}
+.send{
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+  border-style: solid;
+  border-color: black;
+ 
+}
+.box{
+
+   color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 10px;
+  border-style: none;
+  /* width: 120px; */
+  background-color: transparent;
+}
+.box:hover{
+  border-color: white;
+}
+.box:active{
+  border-color: white;
+  background-color: white;
+}
